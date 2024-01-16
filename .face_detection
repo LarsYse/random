@@ -7,7 +7,6 @@ face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_fronta
 cap = cv2.VideoCapture(0)  # 0 corresponds to the default webcam, adjust if needed
 
 while True:
-    print (face is seen)
     # Capture frame-by-frame
     ret, frame = cap.read()
 
