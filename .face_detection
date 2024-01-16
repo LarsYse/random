@@ -7,6 +7,7 @@ face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_fronta
 cap = cv2.VideoCapture(0)  # 0 corresponds to the default webcam, adjust if needed
 
 while True:
+    print (face is seen)
     # Capture frame-by-frame
     ret, frame = cap.read()
 
@@ -26,7 +27,6 @@ while True:
     # Break the loop when 'q' is pressed
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
-    print ("someone is seen")
 
 # Release the webcam and close all windows
 cap.release()
