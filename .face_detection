@@ -26,6 +26,7 @@ while True:
     # Break the loop when 'q' is pressed
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+    print ("someone is seen")
 
 # Release the webcam and close all windows
 cap.release()
